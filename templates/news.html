@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="News Display">
+    <title>News Posts</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='news.css') }}" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+  <div class="container-fluid">
+    <header class="blog-header py-3"></header>
+
+    <div class="jumbotron jumbotron-fluid p-3 p-md-5 text-white rounded bg-dark">
+      <div class="col-md-6 px-0">
+        <h1 class="display-4 font-italic">Top News Posts</h1>
+        <i class="lead my-3">02-Jan-2019 08:10 p.m</i>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="row mb-2">
+      <div class="col-md-12">
+        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+          <img src="https://static.toiimg.com/thumb/msid-67352075,width-1070,height-580,imgsize-1330307,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" class="col-md-4 card-img-right" alt="Thumbnail">
+          <div class="col-md-8 card-body d-flex flex-column align-items-start">
+            <a href="https://timesofindia.indiatimes.com/sports/cricket/news/sachin-tendulkars-coach-ramakant-achrekar-dies-in-mumbai/articleshow/67352056.cms" class="text-decoration-none">
+              <h3 class="mb-0 text-dark">
+                Sachin Tendulkar's coach Ramakant Achrekar dies in Mumbai - Times of India
+              </h3>
+              <div class="mb-1 text-muted">
+                Jan 02
+              </div>
+              <p class="card-text mb-auto text-dark">
+                Cricket News: Ramakant Achrekar, childhood coach of master blaster Sachin Tendulkar, died on Wednesday. Achrekar, 87, who is known to shape Tendulkar's career, took
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-md-12">
+        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+          <img src="https://images.indianexpress.com/2019/01/Bladder-implant-wahington-university-759.jpg?w=759" class="col-md-4 card-img-right" alt="Thumbnail">
+          <div class="col-md-8 card-body d-flex flex-column align-items-start">
+            <a href="https://timesofindia.indiatimes.com/sports/cricket/news/sachin-tendulkars-coach-ramakant-achrekar-dies-in-mumbai/articleshow/67352056.cms" class="text-decoration-none">
+              <h3 class="mb-0 text-dark">
+                Tiny, implantable device may treat bladder problems - The Indian Express
+              </h3>
+              <div class="mb-1 text-muted">
+                Jan 02
+              </div>
+              <p class="card-text mb-auto text-dark">
+                Devices for people likely would be larger than the ones used in rats, and could be implanted without surgery, using catheters to place them through the urethra into the bladder.
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-md-12">
+        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+          <img src="https://static.toiimg.com/photo/msid-67367966/67367966.jpg?467398" class="col-md-4 card-img-right" alt="Thumbnail">
+          <div class="col-md-8 card-body d-flex flex-column align-items-start">
+            <a href="https://timesofindia.indiatimes.com/sports/cricket/news/sachin-tendulkars-coach-ramakant-achrekar-dies-in-mumbai/articleshow/67352056.cms" class="text-decoration-none">
+              <h3 class="mb-0 text-dark">
+                Watch: When Kader Khan revealed he lost films for not calling Amitabh Bachchan ‘Sir Ji’ - Times of India
+              </h3>
+              <div class="mb-1 text-muted">
+                Jan 02
+              </div>
+              <p class="card-text mb-auto text-dark">
+                In the video clip, late Kader Khan can be seen confessing that he had lost films because he refused to call Amitabh Bachchan, ‘Amit Ji’.
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <header class="blog-header py-3"></header>
+  </div>
+
+  <nav class="navbar fixed-bottom bg-dark">
+    <span class="navbar-text text-light">Powered by NewsAPI.org</span>
+    <a class="text-right text-light" class="text-decoration-none" href="#">Back to top</a>
+  </nav>
+
+<script src="{{ url_for('static', filename='jquery-3.3.1.slim.min.js') }}"></script>
+<script>window.jQuery || document.write('<script src="/docs/4.2/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="{{ url_for('static', filename='bootstrap.bundle.min.js') }}"></script>
+
+</body></html>
