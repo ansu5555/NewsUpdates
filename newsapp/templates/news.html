@@ -32,7 +32,7 @@
     <div class="jumbotron jumbotron-fluid p-3 p-md-5 text-white rounded bg-dark">
       <div class="col-md-6 px-0">
         <h1 class="display-4 font-italic">Top News Posts</h1>
-        <i class="lead my-3">02-Jan-2019 08:10 p.m</i>
+        <i class="lead my-3">{{ timenow}}</i>
       </div>
     </div>
   </div>
@@ -50,7 +50,7 @@
                 {{ article.title }}
               </h3>
               <div class="mb-1 text-muted">
-                Jan 02
+                {{ article.publishedAt}}
               </div>
               <p class="card-text mb-auto text-dark">
                 {{ article.description }}
