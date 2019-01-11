@@ -34,7 +34,9 @@ def create_news_object(news_article):
                 )
 
 
-@scheduler.task('interval', id='do_job_1', minutes=15, misfire_grace_time=900)
+@scheduler.task('interval', id='do_update_articles',
+                minutes=15,
+                misfire_grace_time=900)
 def update_db():
     db_articles = [item.title for item in News.query.all()]
     articles = get_articles()
@@ -43,7 +45,6 @@ def update_db():
         obj = create_news_object(article)
         if obj.title not in db_articles:
             objects.append(obj)
-    print('====>', len(objects))
     db.session.bulk_save_objects(objects)
     db.session.commit()
 
